@@ -1,0 +1,602 @@
+> show dbs
+admin       0.000GB
+assignment  0.000GB
+config      0.000GB
+local       0.000GB
+> db.collections
+test.collections
+> db
+test
+> db assignment
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:3
+> db.assignment
+test.assignment
+> use assignment
+switched to db assignment
+> db
+assignment
+> show collections
+assign
+users
+> db.users.insert({"first_name":"Randall","last_name":"Stratley","email":"rstratley0@webs.com","gender":"Female","ip_address":"170.138.177.146","city":"San Jose"})
+WriteResult({ "nInserted" : 1 })
+> db.users.find({})
+{ "_id" : ObjectId("622782696a61de94b6c462f3"), "first_name" : "Randall", "last_name" : "Stratley", "email" : "rstratley0@webs.com", "gender" : "Female", "ip_address" : "170.138.177.146", "city" : "San Jose" }
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("622782696a61de94b6c462f3"),
+	"first_name" : "Randall",
+	"last_name" : "Stratley",
+	"email" : "rstratley0@webs.com",
+	"gender" : "Female",
+	"ip_address" : "170.138.177.146",
+	"city" : "San Jose"
+}
+> db.users.insertMany([{"first_name":"Martha","last_name":"Blaymires","email":"mblaymires1@blogtalkradio.com","gender":"Female","ip_address":"53.223.176.205","city":"Balagon"},])
+{
+	"acknowledged" : true,
+	"insertedIds" : [
+		ObjectId("622783b66a61de94b6c462f4")
+	]
+}
+> {"first_name":"Stafford","last_name":"Ratie","email":"sratie2@columbia.edu","gender":"Male","ip_address":"24.74.230.189","city":"Ilama"},
+... {"first_name":"Nanon","last_name":"Gredden","email":"ngredden3@blogtalkradio.com","gender":"Female","ip_address":"216.3.187.148","city":"Caculé"},
+... {"first_name":"Jacenta","last_name":"Rochell","email":"jrochell4@bluehost.com","gender":"Male","ip_address":"92.227.113.5","city":"Siedliska"},
+... {"first_name":"Niel","last_name":"Crommett","email":"ncrommett5@ebay.co.uk","gender":"Female","ip_address":"145.68.235.241","city":"Takanosu"},
+... {"first_name":"Sanders","last_name":"Banane","email":"sbanane6@tuttocitta.it","gender":"Female","ip_address":"243.77.193.68","city":"Qingfenglin"},
+... {"first_name":"Pauline","last_name":"Burwell","email":"pburwell7@state.gov","gender":"Female","ip_address":"135.202.191.59","city":"Alpedrinha"},
+... {"first_name":"Collie","last_name":"Gotecliffe","email":"cgotecliffe8@homestead.com","gender":"Female","ip_address":"35.17.119.239","city":"Pokrovka"},
+... {"first_name":"Fedora","last_name":"Cardinale","email":"fcardinale9@google.co.uk","gender":"Male","ip_address":"102.71.9.253","city":"San Lucas Tolimán"}
+uncaught exception: SyntaxError: unexpected token: ':' :
+@(shell):1:13
+> {"first_name":"Stafford","last_name":"Ratie","email":"sratie2@columbia.edu","gender":"Male","ip_address":"24.74.230.189","city":"Ilama"}, {"first_name":"Nanon","last_name":"Gredden","email":"ngredden3@blogtalkradio.com","gender":"Female","ip_address":"216.3.187.148","city":"Caculé"}, {"first_name":"Jacenta","last_name":"Rochell","email":"jrochell4@bluehost.com","gender":"Male","ip_address":"92.227.113.5","city":"Siedliska"}, {"first_name":"Niel","last_name":"Crommett","email":"ncrommett5@ebay.co.uk","gender":"Female","ip_address":"145.68.235.241","city":"Takanosu"}, {"first_name":"Sanders","last_name":"Banane","email":"sbanane6@tuttocitta.it","gender":"Female","ip_address":"243.77.193.68","city":"Qingfenglin"}, {"first_name":"Pauline","last_name":"Burwell","email":"pburwell7@state.gov","gender":"Female","ip_address":"135.202.191.59","city":"Alpedrinha"}, {"first_name":"Collie","last_name":"Gotecliffe","email":"cgotecliffe8@homestead.com","gender":"Female","ip_address":"35.17.119.239","city":"Pokrovka"}, {"first_name":"Fedora","last_name":"Cardinale","email":"fcardinale9@google.co.uk","gender":"Male","ip_address":"102.71.9.253","city":"San Lucas Tolimán"}
+uncaught exception: SyntaxError: unexpected token: ':' :
+@(shell):1:13
+> db.users.find({})
+{ "_id" : ObjectId("622782696a61de94b6c462f3"), "first_name" : "Randall", "last_name" : "Stratley", "email" : "rstratley0@webs.com", "gender" : "Female", "ip_address" : "170.138.177.146", "city" : "San Jose" }
+{ "_id" : ObjectId("622783b66a61de94b6c462f4"), "first_name" : "Martha", "last_name" : "Blaymires", "email" : "mblaymires1@blogtalkradio.com", "gender" : "Female", "ip_address" : "53.223.176.205", "city" : "Balagon" }
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("622782696a61de94b6c462f3"),
+	"first_name" : "Randall",
+	"last_name" : "Stratley",
+	"email" : "rstratley0@webs.com",
+	"gender" : "Female",
+	"ip_address" : "170.138.177.146",
+	"city" : "San Jose"
+}
+{
+	"_id" : ObjectId("622783b66a61de94b6c462f4"),
+	"first_name" : "Martha",
+	"last_name" : "Blaymires",
+	"email" : "mblaymires1@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "53.223.176.205",
+	"city" : "Balagon"
+}
+> db.users.insertMany([{"first_name":"Stafford","last_name":"Ratie","email":"sratie2@columbia.edu","gender":"Male","ip_address":"24.74.230.189","city":"Ilama"},{"first_name":"Nanon","last_name":"Gredden","email":"ngredden3@blogtalkradio.com","gender":"Female","ip_address":"216.3.187.148","city":"Caculé"},{"first_name":"Jacenta","last_name":"Rochell","email":"jrochell4@bluehost.com","gender":"Male","ip_address":"92.227.113.5","city":"Siedliska"},{"first_name":"Niel","last_name":"Crommett","email":"ncrommett5@ebay.co.uk","gender":"Female","ip_address":"145.68.235.241","city":"Takanosu"},{"first_name":"Sanders","last_name":"Banane","email":"sbanane6@tuttocitta.it","gender":"Female","ip_address":"243.77.193.68","city":"Qingfenglin"},{"first_name":"Pauline","last_name":"Burwell","email":"pburwell7@state.gov","gender":"Female","ip_address":"135.202.191.59","city":"Alpedrinha"},{"first_name":"Collie","last_name":"Gotecliffe","email":"cgotecliffe8@homestead.com","gender":"Female","ip_address":"35.17.119.239","city":"Pokrovka"},{"first_name":"Fedora","last_name":"Cardinale","email":"fcardinale9@google.co.uk","gender":"Male","ip_address":"102.71.9.253","city":"San Lucas Tolimán"}])
+{
+	"acknowledged" : true,
+	"insertedIds" : [
+		ObjectId("622784c56a61de94b6c462f5"),
+		ObjectId("622784c56a61de94b6c462f6"),
+		ObjectId("622784c56a61de94b6c462f7"),
+		ObjectId("622784c56a61de94b6c462f8"),
+		ObjectId("622784c56a61de94b6c462f9"),
+		ObjectId("622784c56a61de94b6c462fa"),
+		ObjectId("622784c56a61de94b6c462fb"),
+		ObjectId("622784c56a61de94b6c462fc")
+	]
+}
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("622782696a61de94b6c462f3"),
+	"first_name" : "Randall",
+	"last_name" : "Stratley",
+	"email" : "rstratley0@webs.com",
+	"gender" : "Female",
+	"ip_address" : "170.138.177.146",
+	"city" : "San Jose"
+}
+{
+	"_id" : ObjectId("622783b66a61de94b6c462f4"),
+	"first_name" : "Martha",
+	"last_name" : "Blaymires",
+	"email" : "mblaymires1@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "53.223.176.205",
+	"city" : "Balagon"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f5"),
+	"first_name" : "Stafford",
+	"last_name" : "Ratie",
+	"email" : "sratie2@columbia.edu",
+	"gender" : "Male",
+	"ip_address" : "24.74.230.189",
+	"city" : "Ilama"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f6"),
+	"first_name" : "Nanon",
+	"last_name" : "Gredden",
+	"email" : "ngredden3@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "216.3.187.148",
+	"city" : "Caculé"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f7"),
+	"first_name" : "Jacenta",
+	"last_name" : "Rochell",
+	"email" : "jrochell4@bluehost.com",
+	"gender" : "Male",
+	"ip_address" : "92.227.113.5",
+	"city" : "Siedliska"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f8"),
+	"first_name" : "Niel",
+	"last_name" : "Crommett",
+	"email" : "ncrommett5@ebay.co.uk",
+	"gender" : "Female",
+	"ip_address" : "145.68.235.241",
+	"city" : "Takanosu"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f9"),
+	"first_name" : "Sanders",
+	"last_name" : "Banane",
+	"email" : "sbanane6@tuttocitta.it",
+	"gender" : "Female",
+	"ip_address" : "243.77.193.68",
+	"city" : "Qingfenglin"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fa"),
+	"first_name" : "Pauline",
+	"last_name" : "Burwell",
+	"email" : "pburwell7@state.gov",
+	"gender" : "Female",
+	"ip_address" : "135.202.191.59",
+	"city" : "Alpedrinha"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fb"),
+	"first_name" : "Collie",
+	"last_name" : "Gotecliffe",
+	"email" : "cgotecliffe8@homestead.com",
+	"gender" : "Female",
+	"ip_address" : "35.17.119.239",
+	"city" : "Pokrovka"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fc"),
+	"first_name" : "Fedora",
+	"last_name" : "Cardinale",
+	"email" : "fcardinale9@google.co.uk",
+	"gender" : "Male",
+	"ip_address" : "102.71.9.253",
+	"city" : "San Lucas Tolimán"
+}
+> db.users.findOne({"firstName": "Randall"})
+null
+> db.users.find({"firstName": "Randall"}).pretty()
+> db.users.find({"firstName": "Randall"}).pretty()
+> db.users.find({"first_name":"Randall"}).pretty()
+{
+	"_id" : ObjectId("622782696a61de94b6c462f3"),
+	"first_name" : "Randall",
+	"last_name" : "Stratley",
+	"email" : "rstratley0@webs.com",
+	"gender" : "Female",
+	"ip_address" : "170.138.177.146",
+	"city" : "San Jose"
+}
+> db.users.update({"first_name" : "Randall"},{$set:{"age":23}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("622782696a61de94b6c462f3"),
+	"first_name" : "Randall",
+	"last_name" : "Stratley",
+	"email" : "rstratley0@webs.com",
+	"gender" : "Female",
+	"ip_address" : "170.138.177.146",
+	"city" : "San Jose",
+	"age" : 23
+}
+{
+	"_id" : ObjectId("622783b66a61de94b6c462f4"),
+	"first_name" : "Martha",
+	"last_name" : "Blaymires",
+	"email" : "mblaymires1@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "53.223.176.205",
+	"city" : "Balagon"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f5"),
+	"first_name" : "Stafford",
+	"last_name" : "Ratie",
+	"email" : "sratie2@columbia.edu",
+	"gender" : "Male",
+	"ip_address" : "24.74.230.189",
+	"city" : "Ilama"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f6"),
+	"first_name" : "Nanon",
+	"last_name" : "Gredden",
+	"email" : "ngredden3@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "216.3.187.148",
+	"city" : "Caculé"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f7"),
+	"first_name" : "Jacenta",
+	"last_name" : "Rochell",
+	"email" : "jrochell4@bluehost.com",
+	"gender" : "Male",
+	"ip_address" : "92.227.113.5",
+	"city" : "Siedliska"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f8"),
+	"first_name" : "Niel",
+	"last_name" : "Crommett",
+	"email" : "ncrommett5@ebay.co.uk",
+	"gender" : "Female",
+	"ip_address" : "145.68.235.241",
+	"city" : "Takanosu"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f9"),
+	"first_name" : "Sanders",
+	"last_name" : "Banane",
+	"email" : "sbanane6@tuttocitta.it",
+	"gender" : "Female",
+	"ip_address" : "243.77.193.68",
+	"city" : "Qingfenglin"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fa"),
+	"first_name" : "Pauline",
+	"last_name" : "Burwell",
+	"email" : "pburwell7@state.gov",
+	"gender" : "Female",
+	"ip_address" : "135.202.191.59",
+	"city" : "Alpedrinha"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fb"),
+	"first_name" : "Collie",
+	"last_name" : "Gotecliffe",
+	"email" : "cgotecliffe8@homestead.com",
+	"gender" : "Female",
+	"ip_address" : "35.17.119.239",
+	"city" : "Pokrovka"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fc"),
+	"first_name" : "Fedora",
+	"last_name" : "Cardinale",
+	"email" : "fcardinale9@google.co.uk",
+	"gender" : "Male",
+	"ip_address" : "102.71.9.253",
+	"city" : "San Lucas Tolimán"
+}
+> db.users.update({"first_name" : "Martha"},{$set:{"age":22}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.updateMany({gender" : "Male"},{$set:{"eligible":"strong"}})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:27
+> db.users.updateMany({"gender" : "Male"},{$set:{"eligible":"strong"}})
+{ "acknowledged" : true, "matchedCount" : 3, "modifiedCount" : 3 }
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("622782696a61de94b6c462f3"),
+	"first_name" : "Randall",
+	"last_name" : "Stratley",
+	"email" : "rstratley0@webs.com",
+	"gender" : "Female",
+	"ip_address" : "170.138.177.146",
+	"city" : "San Jose",
+	"age" : 23
+}
+{
+	"_id" : ObjectId("622783b66a61de94b6c462f4"),
+	"first_name" : "Martha",
+	"last_name" : "Blaymires",
+	"email" : "mblaymires1@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "53.223.176.205",
+	"city" : "Balagon",
+	"age" : 22
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f5"),
+	"first_name" : "Stafford",
+	"last_name" : "Ratie",
+	"email" : "sratie2@columbia.edu",
+	"gender" : "Male",
+	"ip_address" : "24.74.230.189",
+	"city" : "Ilama",
+	"eligible" : "strong"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f6"),
+	"first_name" : "Nanon",
+	"last_name" : "Gredden",
+	"email" : "ngredden3@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "216.3.187.148",
+	"city" : "Caculé"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f7"),
+	"first_name" : "Jacenta",
+	"last_name" : "Rochell",
+	"email" : "jrochell4@bluehost.com",
+	"gender" : "Male",
+	"ip_address" : "92.227.113.5",
+	"city" : "Siedliska",
+	"eligible" : "strong"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f8"),
+	"first_name" : "Niel",
+	"last_name" : "Crommett",
+	"email" : "ncrommett5@ebay.co.uk",
+	"gender" : "Female",
+	"ip_address" : "145.68.235.241",
+	"city" : "Takanosu"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f9"),
+	"first_name" : "Sanders",
+	"last_name" : "Banane",
+	"email" : "sbanane6@tuttocitta.it",
+	"gender" : "Female",
+	"ip_address" : "243.77.193.68",
+	"city" : "Qingfenglin"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fa"),
+	"first_name" : "Pauline",
+	"last_name" : "Burwell",
+	"email" : "pburwell7@state.gov",
+	"gender" : "Female",
+	"ip_address" : "135.202.191.59",
+	"city" : "Alpedrinha"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fb"),
+	"first_name" : "Collie",
+	"last_name" : "Gotecliffe",
+	"email" : "cgotecliffe8@homestead.com",
+	"gender" : "Female",
+	"ip_address" : "35.17.119.239",
+	"city" : "Pokrovka"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fc"),
+	"first_name" : "Fedora",
+	"last_name" : "Cardinale",
+	"email" : "fcardinale9@google.co.uk",
+	"gender" : "Male",
+	"ip_address" : "102.71.9.253",
+	"city" : "San Lucas Tolimán",
+	"eligible" : "strong"
+}
+> db.users.remove({"first_name" : "Fedora"},{$unset:"eligible":"strong"})
+uncaught exception: SyntaxError: missing } after property list :
+@(shell):1:60
+> db.users.remove({"first_name" : "Fedora"},{$unset:{"eligible":"strong"}})
+WriteResult({ "nRemoved" : 1 })
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("622782696a61de94b6c462f3"),
+	"first_name" : "Randall",
+	"last_name" : "Stratley",
+	"email" : "rstratley0@webs.com",
+	"gender" : "Female",
+	"ip_address" : "170.138.177.146",
+	"city" : "San Jose",
+	"age" : 23
+}
+{
+	"_id" : ObjectId("622783b66a61de94b6c462f4"),
+	"first_name" : "Martha",
+	"last_name" : "Blaymires",
+	"email" : "mblaymires1@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "53.223.176.205",
+	"city" : "Balagon",
+	"age" : 22
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f5"),
+	"first_name" : "Stafford",
+	"last_name" : "Ratie",
+	"email" : "sratie2@columbia.edu",
+	"gender" : "Male",
+	"ip_address" : "24.74.230.189",
+	"city" : "Ilama",
+	"eligible" : "strong"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f6"),
+	"first_name" : "Nanon",
+	"last_name" : "Gredden",
+	"email" : "ngredden3@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "216.3.187.148",
+	"city" : "Caculé"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f7"),
+	"first_name" : "Jacenta",
+	"last_name" : "Rochell",
+	"email" : "jrochell4@bluehost.com",
+	"gender" : "Male",
+	"ip_address" : "92.227.113.5",
+	"city" : "Siedliska",
+	"eligible" : "strong"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f8"),
+	"first_name" : "Niel",
+	"last_name" : "Crommett",
+	"email" : "ncrommett5@ebay.co.uk",
+	"gender" : "Female",
+	"ip_address" : "145.68.235.241",
+	"city" : "Takanosu"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f9"),
+	"first_name" : "Sanders",
+	"last_name" : "Banane",
+	"email" : "sbanane6@tuttocitta.it",
+	"gender" : "Female",
+	"ip_address" : "243.77.193.68",
+	"city" : "Qingfenglin"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fa"),
+	"first_name" : "Pauline",
+	"last_name" : "Burwell",
+	"email" : "pburwell7@state.gov",
+	"gender" : "Female",
+	"ip_address" : "135.202.191.59",
+	"city" : "Alpedrinha"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fb"),
+	"first_name" : "Collie",
+	"last_name" : "Gotecliffe",
+	"email" : "cgotecliffe8@homestead.com",
+	"gender" : "Female",
+	"ip_address" : "35.17.119.239",
+	"city" : "Pokrovka"
+}
+> db.users.removeMany()
+uncaught exception: TypeError: db.users.removeMany is not a function :
+@(shell):1:1
+> db.users.removeMany({})
+uncaught exception: TypeError: db.users.removeMany is not a function :
+@(shell):1:1
+> db.users.deleteMany()
+uncaught exception: Error: find() requires query criteria :
+Bulk/this.find@src/mongo/shell/bulk_api.js:804:23
+DBCollection.prototype.deleteMany@src/mongo/shell/crud_api.js:420:20
+@(shell):1:1
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("622782696a61de94b6c462f3"),
+	"first_name" : "Randall",
+	"last_name" : "Stratley",
+	"email" : "rstratley0@webs.com",
+	"gender" : "Female",
+	"ip_address" : "170.138.177.146",
+	"city" : "San Jose",
+	"age" : 23
+}
+{
+	"_id" : ObjectId("622783b66a61de94b6c462f4"),
+	"first_name" : "Martha",
+	"last_name" : "Blaymires",
+	"email" : "mblaymires1@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "53.223.176.205",
+	"city" : "Balagon",
+	"age" : 22
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f5"),
+	"first_name" : "Stafford",
+	"last_name" : "Ratie",
+	"email" : "sratie2@columbia.edu",
+	"gender" : "Male",
+	"ip_address" : "24.74.230.189",
+	"city" : "Ilama",
+	"eligible" : "strong"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f6"),
+	"first_name" : "Nanon",
+	"last_name" : "Gredden",
+	"email" : "ngredden3@blogtalkradio.com",
+	"gender" : "Female",
+	"ip_address" : "216.3.187.148",
+	"city" : "Caculé"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f7"),
+	"first_name" : "Jacenta",
+	"last_name" : "Rochell",
+	"email" : "jrochell4@bluehost.com",
+	"gender" : "Male",
+	"ip_address" : "92.227.113.5",
+	"city" : "Siedliska",
+	"eligible" : "strong"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f8"),
+	"first_name" : "Niel",
+	"last_name" : "Crommett",
+	"email" : "ncrommett5@ebay.co.uk",
+	"gender" : "Female",
+	"ip_address" : "145.68.235.241",
+	"city" : "Takanosu"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462f9"),
+	"first_name" : "Sanders",
+	"last_name" : "Banane",
+	"email" : "sbanane6@tuttocitta.it",
+	"gender" : "Female",
+	"ip_address" : "243.77.193.68",
+	"city" : "Qingfenglin"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fa"),
+	"first_name" : "Pauline",
+	"last_name" : "Burwell",
+	"email" : "pburwell7@state.gov",
+	"gender" : "Female",
+	"ip_address" : "135.202.191.59",
+	"city" : "Alpedrinha"
+}
+{
+	"_id" : ObjectId("622784c56a61de94b6c462fb"),
+	"first_name" : "Collie",
+	"last_name" : "Gotecliffe",
+	"email" : "cgotecliffe8@homestead.com",
+	"gender" : "Female",
+	"ip_address" : "35.17.119.239",
+	"city" : "Pokrovka"
+}
+> db.users.remove()
+uncaught exception: Error: remove needs a query :
+DBCollection.prototype._parseRemove@src/mongo/shell/collection.js:364:15
+DBCollection.prototype.remove@src/mongo/shell/collection.js:394:18
+@(shell):1:1
+> db.users.removeMany({})
+uncaught exception: TypeError: db.users.removeMany is not a function :
+@(shell):1:1
+> db.users.remove({})
+WriteResult({ "nRemoved" : 9 })
+> db.users.find({}).pretty()
+> db
+assignment
+> db.dropDatabase
+function(writeConcern) {
+    return this._dbCommand(
+        {dropDatabase: 1, writeConcern: writeConcern ? writeConcern : _defaultWriteConcern});
+}
+> db.dropDatabase()
+{ "ok" : 1 }
+> 
