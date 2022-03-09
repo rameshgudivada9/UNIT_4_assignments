@@ -1,0 +1,1476 @@
+
+
+> show dbs
+admin        0.000GB
+config       0.000GB
+local        0.000GB
+mock_movies  0.000GB
+> use mock_movies
+switched to db mock_movies
+> db
+mock_movies
+> show collections
+users
+> db.users.find({}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fa"),
+	"id" : 1,
+	"movie_name" : "Suspect X (Yôgisha X no kenshin)",
+	"genre_name" : "Crime|Drama|Mystery",
+	"production_year" : 1999,
+	"budget" : 17687
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fb"),
+	"id" : 2,
+	"movie_name" : "Nola",
+	"genre_name" : "Drama",
+	"production_year" : 2007,
+	"budget" : 9420
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fc"),
+	"id" : 3,
+	"movie_name" : "Bounce",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 2016,
+	"budget" : 14762
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fd"),
+	"id" : 4,
+	"movie_name" : "Tony",
+	"genre_name" : "Drama|Horror|Thriller",
+	"production_year" : 2008,
+	"budget" : 18270
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fe"),
+	"id" : 5,
+	"movie_name" : "Alien³ (a.k.a. Alien 3)",
+	"genre_name" : "Action|Horror|Sci-Fi|Thriller",
+	"production_year" : 1990,
+	"budget" : 9156
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6ff"),
+	"id" : 6,
+	"movie_name" : "Rewind This!",
+	"genre_name" : "Documentary",
+	"production_year" : 1998,
+	"budget" : 19359
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da700"),
+	"id" : 7,
+	"movie_name" : "Stephen Fry In America - New World",
+	"genre_name" : "(no genres listed)",
+	"production_year" : 1992,
+	"budget" : 11216
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da701"),
+	"id" : 8,
+	"movie_name" : "Whistle Blower, The",
+	"genre_name" : "Thriller",
+	"production_year" : 2001,
+	"budget" : 15951
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da702"),
+	"id" : 9,
+	"movie_name" : "Cercle Rouge, Le (Red Circle, The)",
+	"genre_name" : "Crime|Thriller",
+	"production_year" : 2014,
+	"budget" : 19342
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da703"),
+	"id" : null,
+	"movie_name" : "Stealing Home",
+	"genre_name" : "Drama",
+	"production_year" : 2009,
+	"budget" : 10487
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da704"),
+	"id" : 11,
+	"movie_name" : "Washington Square",
+	"genre_name" : "Drama",
+	"production_year" : 2006,
+	"budget" : 13155
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da705"),
+	"id" : 12,
+	"movie_name" : "Twister",
+	"genre_name" : "Action|Adventure|Romance|Thriller",
+	"production_year" : 1992,
+	"budget" : 12343
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da706"),
+	"id" : 13,
+	"movie_name" : "Into the Woods",
+	"genre_name" : "Adventure|Comedy|Fantasy|Musical",
+	"production_year" : 2012,
+	"budget" : 16401
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da707"),
+	"id" : 14,
+	"movie_name" : "Divorcee, The",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 1995,
+	"budget" : 12319
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da708"),
+	"id" : 15,
+	"movie_name" : "Lancelot of the Lake (Lancelot du Lac)",
+	"genre_name" : "Drama|War",
+	"production_year" : 1996,
+	"budget" : 17117
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da709"),
+	"id" : 16,
+	"movie_name" : "Gone with the Wind",
+	"genre_name" : "Drama|Romance|War",
+	"production_year" : 2012,
+	"budget" : 11478
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70a"),
+	"id" : 17,
+	"movie_name" : "Night Shift",
+	"genre_name" : "Comedy",
+	"production_year" : 2000,
+	"budget" : 13806
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70b"),
+	"id" : null,
+	"movie_name" : "If It's Tuesday, This Must Be Belgium",
+	"genre_name" : "Comedy|Drama",
+	"production_year" : 2006,
+	"budget" : 9096
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70c"),
+	"id" : 19,
+	"movie_name" : "Killing Auntie (Zabicie ciotki)",
+	"genre_name" : "Drama|Thriller",
+	"production_year" : 1999,
+	"budget" : 9676
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70d"),
+	"id" : 20,
+	"movie_name" : "Burn, Witch, Burn (Night of the Eagle)",
+	"genre_name" : "Horror",
+	"production_year" : 1997,
+	"budget" : 19033
+}
+Type "it" for more
+> "it"
+it
+> db.users.find({"movie_name" : {$eq:"Nola"}}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fb"),
+	"id" : 2,
+	"movie_name" : "Nola",
+	"genre_name" : "Drama",
+	"production_year" : 2007,
+	"budget" : 9420
+}
+> db.users.find({"movie_name" : {$ne:"Nola"}}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fa"),
+	"id" : 1,
+	"movie_name" : "Suspect X (Yôgisha X no kenshin)",
+	"genre_name" : "Crime|Drama|Mystery",
+	"production_year" : 1999,
+	"budget" : 17687
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fc"),
+	"id" : 3,
+	"movie_name" : "Bounce",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 2016,
+	"budget" : 14762
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fd"),
+	"id" : 4,
+	"movie_name" : "Tony",
+	"genre_name" : "Drama|Horror|Thriller",
+	"production_year" : 2008,
+	"budget" : 18270
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fe"),
+	"id" : 5,
+	"movie_name" : "Alien³ (a.k.a. Alien 3)",
+	"genre_name" : "Action|Horror|Sci-Fi|Thriller",
+	"production_year" : 1990,
+	"budget" : 9156
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6ff"),
+	"id" : 6,
+	"movie_name" : "Rewind This!",
+	"genre_name" : "Documentary",
+	"production_year" : 1998,
+	"budget" : 19359
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da700"),
+	"id" : 7,
+	"movie_name" : "Stephen Fry In America - New World",
+	"genre_name" : "(no genres listed)",
+	"production_year" : 1992,
+	"budget" : 11216
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da701"),
+	"id" : 8,
+	"movie_name" : "Whistle Blower, The",
+	"genre_name" : "Thriller",
+	"production_year" : 2001,
+	"budget" : 15951
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da702"),
+	"id" : 9,
+	"movie_name" : "Cercle Rouge, Le (Red Circle, The)",
+	"genre_name" : "Crime|Thriller",
+	"production_year" : 2014,
+	"budget" : 19342
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da703"),
+	"id" : null,
+	"movie_name" : "Stealing Home",
+	"genre_name" : "Drama",
+	"production_year" : 2009,
+	"budget" : 10487
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da704"),
+	"id" : 11,
+	"movie_name" : "Washington Square",
+	"genre_name" : "Drama",
+	"production_year" : 2006,
+	"budget" : 13155
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da705"),
+	"id" : 12,
+	"movie_name" : "Twister",
+	"genre_name" : "Action|Adventure|Romance|Thriller",
+	"production_year" : 1992,
+	"budget" : 12343
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da706"),
+	"id" : 13,
+	"movie_name" : "Into the Woods",
+	"genre_name" : "Adventure|Comedy|Fantasy|Musical",
+	"production_year" : 2012,
+	"budget" : 16401
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da707"),
+	"id" : 14,
+	"movie_name" : "Divorcee, The",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 1995,
+	"budget" : 12319
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da708"),
+	"id" : 15,
+	"movie_name" : "Lancelot of the Lake (Lancelot du Lac)",
+	"genre_name" : "Drama|War",
+	"production_year" : 1996,
+	"budget" : 17117
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da709"),
+	"id" : 16,
+	"movie_name" : "Gone with the Wind",
+	"genre_name" : "Drama|Romance|War",
+	"production_year" : 2012,
+	"budget" : 11478
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70a"),
+	"id" : 17,
+	"movie_name" : "Night Shift",
+	"genre_name" : "Comedy",
+	"production_year" : 2000,
+	"budget" : 13806
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70b"),
+	"id" : null,
+	"movie_name" : "If It's Tuesday, This Must Be Belgium",
+	"genre_name" : "Comedy|Drama",
+	"production_year" : 2006,
+	"budget" : 9096
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70c"),
+	"id" : 19,
+	"movie_name" : "Killing Auntie (Zabicie ciotki)",
+	"genre_name" : "Drama|Thriller",
+	"production_year" : 1999,
+	"budget" : 9676
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70d"),
+	"id" : 20,
+	"movie_name" : "Burn, Witch, Burn (Night of the Eagle)",
+	"genre_name" : "Horror",
+	"production_year" : 1997,
+	"budget" : 19033
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70e"),
+	"id" : null,
+	"movie_name" : "Return to Lonesome Dove",
+	"genre_name" : "Drama|Western",
+	"production_year" : 2011,
+	"budget" : 16480
+}
+Type "it" for more
+> db.users.find({"budget" : {$gte:{16401}}).pretty()
+... 
+... 
+> db.users.find({"budget" : {$gte:16480}}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fa"),
+	"id" : 1,
+	"movie_name" : "Suspect X (Yôgisha X no kenshin)",
+	"genre_name" : "Crime|Drama|Mystery",
+	"production_year" : 1999,
+	"budget" : 17687
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fd"),
+	"id" : 4,
+	"movie_name" : "Tony",
+	"genre_name" : "Drama|Horror|Thriller",
+	"production_year" : 2008,
+	"budget" : 18270
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6ff"),
+	"id" : 6,
+	"movie_name" : "Rewind This!",
+	"genre_name" : "Documentary",
+	"production_year" : 1998,
+	"budget" : 19359
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da702"),
+	"id" : 9,
+	"movie_name" : "Cercle Rouge, Le (Red Circle, The)",
+	"genre_name" : "Crime|Thriller",
+	"production_year" : 2014,
+	"budget" : 19342
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da708"),
+	"id" : 15,
+	"movie_name" : "Lancelot of the Lake (Lancelot du Lac)",
+	"genre_name" : "Drama|War",
+	"production_year" : 1996,
+	"budget" : 17117
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70d"),
+	"id" : 20,
+	"movie_name" : "Burn, Witch, Burn (Night of the Eagle)",
+	"genre_name" : "Horror",
+	"production_year" : 1997,
+	"budget" : 19033
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70e"),
+	"id" : null,
+	"movie_name" : "Return to Lonesome Dove",
+	"genre_name" : "Drama|Western",
+	"production_year" : 2011,
+	"budget" : 16480
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da715"),
+	"id" : 28,
+	"movie_name" : "Kisses (Kuchizuke)",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 1992,
+	"budget" : 17708
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da717"),
+	"id" : 30,
+	"movie_name" : "Toll of the Sea, The",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 2007,
+	"budget" : 17840
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da718"),
+	"id" : 31,
+	"movie_name" : "Dinosaur 13",
+	"genre_name" : "Adventure|Documentary|Drama|Thriller",
+	"production_year" : 2012,
+	"budget" : 19825
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da719"),
+	"id" : 32,
+	"movie_name" : "Religulous",
+	"genre_name" : "Comedy|Documentary",
+	"production_year" : 1991,
+	"budget" : 18309
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da71b"),
+	"id" : 34,
+	"movie_name" : "Great Debaters, The",
+	"genre_name" : "Drama",
+	"production_year" : 2011,
+	"budget" : 18875
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da71e"),
+	"id" : 37,
+	"movie_name" : "Fantastic Voyage",
+	"genre_name" : "Adventure|Sci-Fi",
+	"production_year" : 2010,
+	"budget" : 17799
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da71f"),
+	"id" : 38,
+	"movie_name" : "Dead Man's Shoes",
+	"genre_name" : "Crime|Thriller",
+	"production_year" : 2004,
+	"budget" : 17294
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da724"),
+	"id" : 43,
+	"movie_name" : "Stranger in Town, A",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 1997,
+	"budget" : 19340
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da72a"),
+	"id" : 49,
+	"movie_name" : "Mao's Last Dancer",
+	"genre_name" : "Drama",
+	"production_year" : 2013,
+	"budget" : 17050
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da72b"),
+	"id" : 50,
+	"movie_name" : "White Palms (Fehér tenyér)",
+	"genre_name" : "Drama",
+	"production_year" : 2001,
+	"budget" : 17336
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da72d"),
+	"id" : 52,
+	"movie_name" : "Killing Kasztner",
+	"genre_name" : "Documentary",
+	"production_year" : 2012,
+	"budget" : 17729
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da72f"),
+	"id" : null,
+	"movie_name" : "Price of Milk, The",
+	"genre_name" : "Comedy|Drama|Fantasy|Romance",
+	"production_year" : 2004,
+	"budget" : 17592
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da738"),
+	"id" : 63,
+	"movie_name" : "Money Matters ",
+	"genre_name" : "Drama",
+	"production_year" : 2008,
+	"budget" : 18673
+}
+Type "it" for more
+> db.users.find({"budget" : {$lte:16480}}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fb"),
+	"id" : 2,
+	"movie_name" : "Nola",
+	"genre_name" : "Drama",
+	"production_year" : 2007,
+	"budget" : 9420
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fc"),
+	"id" : 3,
+	"movie_name" : "Bounce",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 2016,
+	"budget" : 14762
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fe"),
+	"id" : 5,
+	"movie_name" : "Alien³ (a.k.a. Alien 3)",
+	"genre_name" : "Action|Horror|Sci-Fi|Thriller",
+	"production_year" : 1990,
+	"budget" : 9156
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da700"),
+	"id" : 7,
+	"movie_name" : "Stephen Fry In America - New World",
+	"genre_name" : "(no genres listed)",
+	"production_year" : 1992,
+	"budget" : 11216
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da701"),
+	"id" : 8,
+	"movie_name" : "Whistle Blower, The",
+	"genre_name" : "Thriller",
+	"production_year" : 2001,
+	"budget" : 15951
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da703"),
+	"id" : null,
+	"movie_name" : "Stealing Home",
+	"genre_name" : "Drama",
+	"production_year" : 2009,
+	"budget" : 10487
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da704"),
+	"id" : 11,
+	"movie_name" : "Washington Square",
+	"genre_name" : "Drama",
+	"production_year" : 2006,
+	"budget" : 13155
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da705"),
+	"id" : 12,
+	"movie_name" : "Twister",
+	"genre_name" : "Action|Adventure|Romance|Thriller",
+	"production_year" : 1992,
+	"budget" : 12343
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da706"),
+	"id" : 13,
+	"movie_name" : "Into the Woods",
+	"genre_name" : "Adventure|Comedy|Fantasy|Musical",
+	"production_year" : 2012,
+	"budget" : 16401
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da707"),
+	"id" : 14,
+	"movie_name" : "Divorcee, The",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 1995,
+	"budget" : 12319
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da709"),
+	"id" : 16,
+	"movie_name" : "Gone with the Wind",
+	"genre_name" : "Drama|Romance|War",
+	"production_year" : 2012,
+	"budget" : 11478
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70a"),
+	"id" : 17,
+	"movie_name" : "Night Shift",
+	"genre_name" : "Comedy",
+	"production_year" : 2000,
+	"budget" : 13806
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70b"),
+	"id" : null,
+	"movie_name" : "If It's Tuesday, This Must Be Belgium",
+	"genre_name" : "Comedy|Drama",
+	"production_year" : 2006,
+	"budget" : 9096
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70c"),
+	"id" : 19,
+	"movie_name" : "Killing Auntie (Zabicie ciotki)",
+	"genre_name" : "Drama|Thriller",
+	"production_year" : 1999,
+	"budget" : 9676
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70e"),
+	"id" : null,
+	"movie_name" : "Return to Lonesome Dove",
+	"genre_name" : "Drama|Western",
+	"production_year" : 2011,
+	"budget" : 16480
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70f"),
+	"id" : 22,
+	"movie_name" : "Born Romantic",
+	"genre_name" : "Comedy|Drama|Romance",
+	"production_year" : 2004,
+	"budget" : 11032
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da710"),
+	"id" : 23,
+	"movie_name" : "Terrible Kids (Enfants terribles, Les) (Strange Ones, The)",
+	"genre_name" : "Drama",
+	"production_year" : 2006,
+	"budget" : 13790
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da711"),
+	"id" : 24,
+	"movie_name" : "Jay and Silent Bob Strike Back",
+	"genre_name" : "Adventure|Comedy",
+	"production_year" : 2002,
+	"budget" : 14749
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da712"),
+	"id" : 25,
+	"movie_name" : "Hello, Friend",
+	"genre_name" : "Comedy|Horror",
+	"production_year" : 2011,
+	"budget" : 15924
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da713"),
+	"id" : 26,
+	"movie_name" : "Glimpse Inside the Mind of Charles Swan III, A",
+	"genre_name" : "Comedy",
+	"production_year" : 2014,
+	"budget" : 11418
+}
+Type "it" for more
+> db.users.find({$and:[{"production_year" : {$gt:2000},{"budget" : {$gte:10000}]}).pretty()
+... ;
+... 
+... 
+> db.users.find({$and:[{"production_year" : {$gt:2000}},{"budget" : {$gte:10000}}]}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fc"),
+	"id" : 3,
+	"movie_name" : "Bounce",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 2016,
+	"budget" : 14762
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fd"),
+	"id" : 4,
+	"movie_name" : "Tony",
+	"genre_name" : "Drama|Horror|Thriller",
+	"production_year" : 2008,
+	"budget" : 18270
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da701"),
+	"id" : 8,
+	"movie_name" : "Whistle Blower, The",
+	"genre_name" : "Thriller",
+	"production_year" : 2001,
+	"budget" : 15951
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da702"),
+	"id" : 9,
+	"movie_name" : "Cercle Rouge, Le (Red Circle, The)",
+	"genre_name" : "Crime|Thriller",
+	"production_year" : 2014,
+	"budget" : 19342
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da703"),
+	"id" : null,
+	"movie_name" : "Stealing Home",
+	"genre_name" : "Drama",
+	"production_year" : 2009,
+	"budget" : 10487
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da704"),
+	"id" : 11,
+	"movie_name" : "Washington Square",
+	"genre_name" : "Drama",
+	"production_year" : 2006,
+	"budget" : 13155
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da706"),
+	"id" : 13,
+	"movie_name" : "Into the Woods",
+	"genre_name" : "Adventure|Comedy|Fantasy|Musical",
+	"production_year" : 2012,
+	"budget" : 16401
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da709"),
+	"id" : 16,
+	"movie_name" : "Gone with the Wind",
+	"genre_name" : "Drama|Romance|War",
+	"production_year" : 2012,
+	"budget" : 11478
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70e"),
+	"id" : null,
+	"movie_name" : "Return to Lonesome Dove",
+	"genre_name" : "Drama|Western",
+	"production_year" : 2011,
+	"budget" : 16480
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70f"),
+	"id" : 22,
+	"movie_name" : "Born Romantic",
+	"genre_name" : "Comedy|Drama|Romance",
+	"production_year" : 2004,
+	"budget" : 11032
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da710"),
+	"id" : 23,
+	"movie_name" : "Terrible Kids (Enfants terribles, Les) (Strange Ones, The)",
+	"genre_name" : "Drama",
+	"production_year" : 2006,
+	"budget" : 13790
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da711"),
+	"id" : 24,
+	"movie_name" : "Jay and Silent Bob Strike Back",
+	"genre_name" : "Adventure|Comedy",
+	"production_year" : 2002,
+	"budget" : 14749
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da712"),
+	"id" : 25,
+	"movie_name" : "Hello, Friend",
+	"genre_name" : "Comedy|Horror",
+	"production_year" : 2011,
+	"budget" : 15924
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da713"),
+	"id" : 26,
+	"movie_name" : "Glimpse Inside the Mind of Charles Swan III, A",
+	"genre_name" : "Comedy",
+	"production_year" : 2014,
+	"budget" : 11418
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da714"),
+	"id" : 27,
+	"movie_name" : "Dragon Ball Z: Cooler's Revenge (Doragon bôru Z 5: Tobikkiri no saikyô tai saikyô)",
+	"genre_name" : "Action|Adventure|Animation",
+	"production_year" : 2011,
+	"budget" : 11557
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da717"),
+	"id" : 30,
+	"movie_name" : "Toll of the Sea, The",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 2007,
+	"budget" : 17840
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da718"),
+	"id" : 31,
+	"movie_name" : "Dinosaur 13",
+	"genre_name" : "Adventure|Documentary|Drama|Thriller",
+	"production_year" : 2012,
+	"budget" : 19825
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da71a"),
+	"id" : 33,
+	"movie_name" : "King - Jari Litmanen, The (Kuningas Litmanen)",
+	"genre_name" : "Documentary",
+	"production_year" : 2015,
+	"budget" : 13894
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da71b"),
+	"id" : 34,
+	"movie_name" : "Great Debaters, The",
+	"genre_name" : "Drama",
+	"production_year" : 2011,
+	"budget" : 18875
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da71d"),
+	"id" : 36,
+	"movie_name" : "Liar's Autobiography: The Untrue Story of Monty Python's Graham Chapman, A",
+	"genre_name" : "Animation|Comedy",
+	"production_year" : 2015,
+	"budget" : 13173
+}
+Type "it" for more
+> db.users.find({$or:[{"production_year" : {$gt:2000}},{"budget" : {$gte:10000}}]}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fa"),
+	"id" : 1,
+	"movie_name" : "Suspect X (Yôgisha X no kenshin)",
+	"genre_name" : "Crime|Drama|Mystery",
+	"production_year" : 1999,
+	"budget" : 17687
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fb"),
+	"id" : 2,
+	"movie_name" : "Nola",
+	"genre_name" : "Drama",
+	"production_year" : 2007,
+	"budget" : 9420
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fc"),
+	"id" : 3,
+	"movie_name" : "Bounce",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 2016,
+	"budget" : 14762
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fd"),
+	"id" : 4,
+	"movie_name" : "Tony",
+	"genre_name" : "Drama|Horror|Thriller",
+	"production_year" : 2008,
+	"budget" : 18270
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6ff"),
+	"id" : 6,
+	"movie_name" : "Rewind This!",
+	"genre_name" : "Documentary",
+	"production_year" : 1998,
+	"budget" : 19359
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da700"),
+	"id" : 7,
+	"movie_name" : "Stephen Fry In America - New World",
+	"genre_name" : "(no genres listed)",
+	"production_year" : 1992,
+	"budget" : 11216
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da701"),
+	"id" : 8,
+	"movie_name" : "Whistle Blower, The",
+	"genre_name" : "Thriller",
+	"production_year" : 2001,
+	"budget" : 15951
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da702"),
+	"id" : 9,
+	"movie_name" : "Cercle Rouge, Le (Red Circle, The)",
+	"genre_name" : "Crime|Thriller",
+	"production_year" : 2014,
+	"budget" : 19342
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da703"),
+	"id" : null,
+	"movie_name" : "Stealing Home",
+	"genre_name" : "Drama",
+	"production_year" : 2009,
+	"budget" : 10487
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da704"),
+	"id" : 11,
+	"movie_name" : "Washington Square",
+	"genre_name" : "Drama",
+	"production_year" : 2006,
+	"budget" : 13155
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da705"),
+	"id" : 12,
+	"movie_name" : "Twister",
+	"genre_name" : "Action|Adventure|Romance|Thriller",
+	"production_year" : 1992,
+	"budget" : 12343
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da706"),
+	"id" : 13,
+	"movie_name" : "Into the Woods",
+	"genre_name" : "Adventure|Comedy|Fantasy|Musical",
+	"production_year" : 2012,
+	"budget" : 16401
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da707"),
+	"id" : 14,
+	"movie_name" : "Divorcee, The",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 1995,
+	"budget" : 12319
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da708"),
+	"id" : 15,
+	"movie_name" : "Lancelot of the Lake (Lancelot du Lac)",
+	"genre_name" : "Drama|War",
+	"production_year" : 1996,
+	"budget" : 17117
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da709"),
+	"id" : 16,
+	"movie_name" : "Gone with the Wind",
+	"genre_name" : "Drama|Romance|War",
+	"production_year" : 2012,
+	"budget" : 11478
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70a"),
+	"id" : 17,
+	"movie_name" : "Night Shift",
+	"genre_name" : "Comedy",
+	"production_year" : 2000,
+	"budget" : 13806
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70b"),
+	"id" : null,
+	"movie_name" : "If It's Tuesday, This Must Be Belgium",
+	"genre_name" : "Comedy|Drama",
+	"production_year" : 2006,
+	"budget" : 9096
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70d"),
+	"id" : 20,
+	"movie_name" : "Burn, Witch, Burn (Night of the Eagle)",
+	"genre_name" : "Horror",
+	"production_year" : 1997,
+	"budget" : 19033
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70e"),
+	"id" : null,
+	"movie_name" : "Return to Lonesome Dove",
+	"genre_name" : "Drama|Western",
+	"production_year" : 2011,
+	"budget" : 16480
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70f"),
+	"id" : 22,
+	"movie_name" : "Born Romantic",
+	"genre_name" : "Comedy|Drama|Romance",
+	"production_year" : 2004,
+	"budget" : 11032
+}
+Type "it" for more
+> db.users.find({$nor:[{"production_year" : {$gt:2000}},{"budget" : {$gte:10000}}]}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fe"),
+	"id" : 5,
+	"movie_name" : "Alien³ (a.k.a. Alien 3)",
+	"genre_name" : "Action|Horror|Sci-Fi|Thriller",
+	"production_year" : 1990,
+	"budget" : 9156
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70c"),
+	"id" : 19,
+	"movie_name" : "Killing Auntie (Zabicie ciotki)",
+	"genre_name" : "Drama|Thriller",
+	"production_year" : 1999,
+	"budget" : 9676
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da71c"),
+	"id" : 35,
+	"movie_name" : "Kidnapping, Caucasian Style (Kavkazskaya plennitsa)",
+	"genre_name" : "Comedy|Romance",
+	"production_year" : 1994,
+	"budget" : 9613
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da74e"),
+	"id" : 85,
+	"movie_name" : "Time Machine, The",
+	"genre_name" : "Action|Adventure|Sci-Fi",
+	"production_year" : 1992,
+	"budget" : 9909
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da758"),
+	"id" : 95,
+	"movie_name" : "Price of Glory",
+	"genre_name" : "Drama",
+	"production_year" : 1993,
+	"budget" : 9442
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da79c"),
+	"id" : 163,
+	"movie_name" : "Wrestler, The (Painija)",
+	"genre_name" : "Comedy|Drama|Fantasy",
+	"production_year" : 1992,
+	"budget" : 9685
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da7bd"),
+	"id" : 196,
+	"movie_name" : "Weddings and Babies ",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 1992,
+	"budget" : 9781
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da7f8"),
+	"id" : 255,
+	"movie_name" : "I Origins",
+	"genre_name" : "Drama|Sci-Fi",
+	"production_year" : 1992,
+	"budget" : 9004
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da836"),
+	"id" : 317,
+	"movie_name" : "Laugh, Clown, Laugh",
+	"genre_name" : "Drama",
+	"production_year" : 1993,
+	"budget" : 9681
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da860"),
+	"id" : 359,
+	"movie_name" : "Yellowbeard",
+	"genre_name" : "Action|Adventure|Comedy",
+	"production_year" : 1996,
+	"budget" : 9642
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8a4"),
+	"id" : 427,
+	"movie_name" : "Sin City",
+	"genre_name" : "Action|Crime|Film-Noir|Mystery|Thriller",
+	"production_year" : 1997,
+	"budget" : 9792
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8ba"),
+	"id" : 449,
+	"movie_name" : "Taken 2",
+	"genre_name" : "Action|Crime|Drama|Thriller",
+	"production_year" : 1992,
+	"budget" : 9354
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8bc"),
+	"id" : 451,
+	"movie_name" : "The Thirteen Assassins",
+	"genre_name" : "Action|Adventure",
+	"production_year" : 1992,
+	"budget" : 9441
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8c1"),
+	"id" : 456,
+	"movie_name" : "Snow White and the Huntsman",
+	"genre_name" : "Action|Adventure|Drama",
+	"production_year" : 1998,
+	"budget" : 9196
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8db"),
+	"id" : 482,
+	"movie_name" : "Agnes of God",
+	"genre_name" : "Drama|Mystery",
+	"production_year" : 1999,
+	"budget" : 9709
+}
+> db.users.find({$or:[{"production_year" : {$not:2000}},{"budget" : {$not:{$gte:10000}}}]}).pretty()
+Error: error: {
+	"ok" : 0,
+	"errmsg" : "$not needs a regex or a document",
+	"code" : 2,
+	"codeName" : "BadValue"
+}
+> db.users.find({$or:[{"production_year" : {$not:2000}},{"budget" : {$gte:10000}}]}).pretty()
+Error: error: {
+	"ok" : 0,
+	"errmsg" : "$not needs a regex or a document",
+	"code" : 2,
+	"codeName" : "BadValue"
+}
+> db.users.find({$or:[{$not:{"production_year" : 2000}},{"budget" : {$lt:10000}}]}).pretty()
+Error: error: {
+	"ok" : 0,
+	"errmsg" : "unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+	"code" : 2,
+	"codeName" : "BadValue"
+}
+> db.users.find({$or:[{$not:{"production_year" : {$eq:2000}}},{"budget" : {$lt:10000}}]}).pretty()
+Error: error: {
+	"ok" : 0,
+	"errmsg" : "unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+	"code" : 2,
+	"codeName" : "BadValue"
+}
+> db.users.find({$or:[{"production_year" : {$not:{$eq:2000}}},{"budget" : {$gte:10000}}]}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fa"),
+	"id" : 1,
+	"movie_name" : "Suspect X (Yôgisha X no kenshin)",
+	"genre_name" : "Crime|Drama|Mystery",
+	"production_year" : 1999,
+	"budget" : 17687
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fb"),
+	"id" : 2,
+	"movie_name" : "Nola",
+	"genre_name" : "Drama",
+	"production_year" : 2007,
+	"budget" : 9420
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fc"),
+	"id" : 3,
+	"movie_name" : "Bounce",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 2016,
+	"budget" : 14762
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fd"),
+	"id" : 4,
+	"movie_name" : "Tony",
+	"genre_name" : "Drama|Horror|Thriller",
+	"production_year" : 2008,
+	"budget" : 18270
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6fe"),
+	"id" : 5,
+	"movie_name" : "Alien³ (a.k.a. Alien 3)",
+	"genre_name" : "Action|Horror|Sci-Fi|Thriller",
+	"production_year" : 1990,
+	"budget" : 9156
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da6ff"),
+	"id" : 6,
+	"movie_name" : "Rewind This!",
+	"genre_name" : "Documentary",
+	"production_year" : 1998,
+	"budget" : 19359
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da700"),
+	"id" : 7,
+	"movie_name" : "Stephen Fry In America - New World",
+	"genre_name" : "(no genres listed)",
+	"production_year" : 1992,
+	"budget" : 11216
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da701"),
+	"id" : 8,
+	"movie_name" : "Whistle Blower, The",
+	"genre_name" : "Thriller",
+	"production_year" : 2001,
+	"budget" : 15951
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da702"),
+	"id" : 9,
+	"movie_name" : "Cercle Rouge, Le (Red Circle, The)",
+	"genre_name" : "Crime|Thriller",
+	"production_year" : 2014,
+	"budget" : 19342
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da703"),
+	"id" : null,
+	"movie_name" : "Stealing Home",
+	"genre_name" : "Drama",
+	"production_year" : 2009,
+	"budget" : 10487
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da704"),
+	"id" : 11,
+	"movie_name" : "Washington Square",
+	"genre_name" : "Drama",
+	"production_year" : 2006,
+	"budget" : 13155
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da705"),
+	"id" : 12,
+	"movie_name" : "Twister",
+	"genre_name" : "Action|Adventure|Romance|Thriller",
+	"production_year" : 1992,
+	"budget" : 12343
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da706"),
+	"id" : 13,
+	"movie_name" : "Into the Woods",
+	"genre_name" : "Adventure|Comedy|Fantasy|Musical",
+	"production_year" : 2012,
+	"budget" : 16401
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da707"),
+	"id" : 14,
+	"movie_name" : "Divorcee, The",
+	"genre_name" : "Drama|Romance",
+	"production_year" : 1995,
+	"budget" : 12319
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da708"),
+	"id" : 15,
+	"movie_name" : "Lancelot of the Lake (Lancelot du Lac)",
+	"genre_name" : "Drama|War",
+	"production_year" : 1996,
+	"budget" : 17117
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da709"),
+	"id" : 16,
+	"movie_name" : "Gone with the Wind",
+	"genre_name" : "Drama|Romance|War",
+	"production_year" : 2012,
+	"budget" : 11478
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70a"),
+	"id" : 17,
+	"movie_name" : "Night Shift",
+	"genre_name" : "Comedy",
+	"production_year" : 2000,
+	"budget" : 13806
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70b"),
+	"id" : null,
+	"movie_name" : "If It's Tuesday, This Must Be Belgium",
+	"genre_name" : "Comedy|Drama",
+	"production_year" : 2006,
+	"budget" : 9096
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70c"),
+	"id" : 19,
+	"movie_name" : "Killing Auntie (Zabicie ciotki)",
+	"genre_name" : "Drama|Thriller",
+	"production_year" : 1999,
+	"budget" : 9676
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da70d"),
+	"id" : 20,
+	"movie_name" : "Burn, Witch, Burn (Night of the Eagle)",
+	"genre_name" : "Horror",
+	"production_year" : 1997,
+	"budget" : 19033
+}
+Type "it" for more
+> db.users.find({}).sort({"production_year":-1}).pretty()
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da730"),
+	"id" : 55,
+	"movie_name" : "Cape Fear",
+	"genre_name" : "Thriller",
+	"production_year" : 2020,
+	"budget" : 13659
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da766"),
+	"id" : 109,
+	"movie_name" : "Double Whammy",
+	"genre_name" : "Action|Comedy|Drama",
+	"production_year" : 2020,
+	"budget" : 13800
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da76d"),
+	"id" : 116,
+	"movie_name" : "Barney's Great Adventure",
+	"genre_name" : "Adventure|Children",
+	"production_year" : 2020,
+	"budget" : 18619
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da773"),
+	"id" : 122,
+	"movie_name" : "Dishonored",
+	"genre_name" : "Drama|War",
+	"production_year" : 2020,
+	"budget" : 18354
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da787"),
+	"id" : 142,
+	"movie_name" : "End of the Game (Der Richter und sein Henker)",
+	"genre_name" : "Crime|Drama|Mystery|Thriller",
+	"production_year" : 2020,
+	"budget" : 15324
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da7a0"),
+	"id" : 167,
+	"movie_name" : "Lost Reels of Pancho Villa, The (Los rollos perdidos de Pancho Villa)",
+	"genre_name" : "Documentary",
+	"production_year" : 2020,
+	"budget" : 12278
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da7d0"),
+	"id" : 215,
+	"movie_name" : "Extracted",
+	"genre_name" : "Drama|Sci-Fi",
+	"production_year" : 2020,
+	"budget" : 15380
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da7df"),
+	"id" : 230,
+	"movie_name" : "Names of Love, The (Le nom des gens)",
+	"genre_name" : "Comedy",
+	"production_year" : 2020,
+	"budget" : 12036
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da7f0"),
+	"id" : 247,
+	"movie_name" : "I Am the Law",
+	"genre_name" : "Crime|Drama",
+	"production_year" : 2020,
+	"budget" : 9360
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da802"),
+	"id" : 265,
+	"movie_name" : "Unidentified Flying Oddball (a.k.a. Spaceman and King Arthur, The) (a.k.a. Spaceman in King Arthur's Court, A)",
+	"genre_name" : "Adventure|Comedy|Fantasy|Sci-Fi",
+	"production_year" : 2020,
+	"budget" : 11059
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da803"),
+	"id" : 266,
+	"movie_name" : "Don't Tell Anyone (No se lo digas a nadie)",
+	"genre_name" : "Comedy|Drama",
+	"production_year" : 2020,
+	"budget" : 9273
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da861"),
+	"id" : 360,
+	"movie_name" : "Indiana Jones and the Temple of Doom",
+	"genre_name" : "Action|Adventure|Fantasy",
+	"production_year" : 2020,
+	"budget" : 9374
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da87e"),
+	"id" : 389,
+	"movie_name" : "Fixed Bayonets!",
+	"genre_name" : "Drama|War",
+	"production_year" : 2020,
+	"budget" : 14452
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da89b"),
+	"id" : 418,
+	"movie_name" : "Judy Berlin",
+	"genre_name" : "Drama",
+	"production_year" : 2020,
+	"budget" : 15986
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8a7"),
+	"id" : 430,
+	"movie_name" : "No Way Home",
+	"genre_name" : "Drama",
+	"production_year" : 2020,
+	"budget" : 12153
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8b0"),
+	"id" : 439,
+	"movie_name" : "Tokyo Chorus (Tôkyô no kôrasu)",
+	"genre_name" : "Comedy|Drama",
+	"production_year" : 2020,
+	"budget" : 15570
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8bb"),
+	"id" : 450,
+	"movie_name" : "Bartleby",
+	"genre_name" : "Comedy|Drama",
+	"production_year" : 2020,
+	"budget" : 15080
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8c8"),
+	"id" : 463,
+	"movie_name" : "Trespass",
+	"genre_name" : "Action|Crime|Thriller",
+	"production_year" : 2020,
+	"budget" : 18996
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da8dc"),
+	"id" : 483,
+	"movie_name" : "Tales from the Crypt Presents: Bordello of Blood",
+	"genre_name" : "Comedy|Horror",
+	"production_year" : 2020,
+	"budget" : 15381
+}
+{
+	"_id" : ObjectId("6227a4e5d396c31be89da74a"),
+	"id" : 81,
+	"movie_name" : "King, The",
+	"genre_name" : "Drama",
+	"production_year" : 2019,
+	"budget" : 18589
+}
+Type "it" for more
